@@ -1,0 +1,37 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body, html {
+    height: 100%;
+    font-family: 'Courier New', Courier, monospace;
+    color: #000;
+}
+
+a {
+    text-decoration: none;
+    color: #132c49;
+    font-weight: bold;
+    transition: color .1s;
+}
+
+a: hover {
+   color: #3486eb;
+}
+
+button {
+    background-color: #490f96;
+    border: 0;
+    padding: 1%;
+    color: white;
+    font-weight: bold;
+    transition: background-color .1s;
+    cursor: pointer;
+    border-radius: 5px;
+}
+  
+button:hover {
+    background-color: #473855;
+}

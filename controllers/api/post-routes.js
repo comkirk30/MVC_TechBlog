@@ -76,6 +76,7 @@ router.post("/", withAuth, (req, res) => {
 
 router.put('/:id', withAuth, (req, res) => {
     Post.update(
+        {
         title: req.body.title,
         post_text: req.body.post_text
       },
@@ -95,7 +96,6 @@ router.put('/:id', withAuth, (req, res) => {
         console.log(err);
         res.status(500).json(err);
       });
-  });
 
   router.delete('/:id', withAuth, (req, res) => {
     console.log('id', req.params.id);
